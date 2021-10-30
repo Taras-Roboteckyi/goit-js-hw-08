@@ -40,4 +40,5 @@ function onFormSubmit(event) {
     localStorage.removeItem(LOCALSTORAGE_KEY);
     event.currentTarget.reset();
     refs.form.removeEventListener('submit', onFormSubmit);
+   // console.log(refs.form);
 }
