@@ -18,9 +18,10 @@
 }
 
 
-player.setCurrentTime(localStorage.getItem(KEY))
-  .catch(function(error) {
-   console.log('RangeError', error)
+const time = localStorage.getItem(KEY)
+    if (time) {
+        player.setCurrentTime(time)
+            .catch(function(error) {
+        console.log('RangeError', error)
 });
-
-
+};
